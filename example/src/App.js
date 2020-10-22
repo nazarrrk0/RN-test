@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+} from 'react-native';
 import AntourageView, { Antourage } from 'react-native-antourage';
 
 const instructions = Platform.select({
@@ -10,23 +16,22 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
-
   componentDidMount() {
     // Antourage.showFeed();
-    Antourage.authWithApiKey("apiKey", "refUserId", "nickname");
+    Antourage.authWithApiKey('apiKey', 'refUserId', 'nickname');
   }
 
   render() {
     return (
       <View style={styles.container}>
-
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
         <AntourageView
-          onViewerAppear={() => console.log("Appeared")}
-          onViewerDisappear={() => console.log("Disappeared")}
-          widgetPosition={"bottomRight"}
+          onViewerAppear={() => console.log('Appeared')}
+          onViewerDisappear={() => console.log('Disappeared')}
+          widgetPosition={'topRight'}
+          widgetLocale={'en'}
           widgetMargins={{ vertical: 50, horizontal: 20 }}
         />
       </View>
@@ -52,4 +57,3 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
-
