@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-} from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import AntourageView, { Antourage } from 'react-native-antourage';
 
 const instructions = Platform.select({
@@ -30,7 +24,7 @@ export default class App extends Component {
         <AntourageView
           onViewerAppear={() => console.log('Appeared')}
           onViewerDisappear={() => console.log('Disappeared')}
-          widgetPosition={'topRight'}
+          widgetPosition={'bottomLeft'}
           widgetLocale={'en'}
           widgetMargins={{ vertical: 50, horizontal: 20 }}
         />

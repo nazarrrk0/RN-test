@@ -127,6 +127,6 @@ dependencies {
   // noinspection GradleDynamicVersion
   api 'com.facebook.react:react-native:+'
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation 'com.github.antourage:AntViewer-android:2.0.25'
+  implementation 'com.github.antourage:AntViewer-android:2.0.26'
   implementation 'com.android.support.constraint:constraint-layout:2.0.2'
 }
